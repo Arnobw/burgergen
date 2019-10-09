@@ -3,7 +3,15 @@ img {
    
 }
 
-
+#name {
+    padding:10px;
+    position: fixed;
+    z-index: 999;
+    background-color:#ffffff;
+    border:1px solid #000000;
+    font-weight: bold;
+    font-size:20px;
+}
 
 #plate {
     width:500px;
