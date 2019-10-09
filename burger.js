@@ -54,5 +54,3 @@ document.addEventListener('click', function () {
 });
 
 
-
-
