@@ -1,6 +1,7 @@
 // var x = document.body.clientHeight-5;
 // var y = document.body.clientWidth-5;
-
+plate = document.getElementById('plate');
+name = document.getElementById('name');
 burgername=[];
 var x = 500;
 var y = 500;
@@ -49,7 +50,12 @@ function generate() {
 
 generate();
 
-document.getElementById('plate').addEventListener('click', generate());
+document.addEventListener('click', function(){
+    plate.innerHTML = "";
+    burgername=[];
+    name.innerHTML = "";
+    generate();
+});
 
 
 
