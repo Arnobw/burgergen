@@ -5,24 +5,39 @@ img {
 
 #name {
     padding: 10px;
-
+    box-sizing: content-box;
     z-index: 999;
     background-color: #ffffff;
     border: 1px solid #000000;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
+   
+   
 }
 
 #plate {
-    width: 100%;
+    width: 70%;
     height: 500px;
-
+   
     margin-left: 30%;
 
 
+
+
+}
+
+#container {
+    margin-top:20px;
+    width:100%;
+    border:solid 2px #000000;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-image:url(img/tafel.jpg);
+    background-size:cover;
 }
 
 body {

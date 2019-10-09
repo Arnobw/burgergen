@@ -52,3 +52,7 @@ document.addEventListener('click', function () {
     name.innerHTML = "";
     generate();
 });
+
+
+
+
