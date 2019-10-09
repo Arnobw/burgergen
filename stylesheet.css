@@ -5,19 +5,23 @@ img {
 
 #name {
     padding:10px;
-    position: fixed;
+    position: relative;
     z-index: 999;
     background-color:#ffffff;
     border:1px solid #000000;
     font-weight: bold;
     font-size:20px;
-
-    margin-top:20px;
+    text-align:center;
+    width:50%;
+    margin:0 auto;
 }
 
 #plate {
     width:500px;
     height:500px;
+  
+    margin-left:30%;
+  
     
 }
 
@@ -28,4 +32,20 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    width:50%;
+    background-image:url(img/bg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin:0 auto;
 }
+
+@media only screen and (max-width: 600px) {
+  #plate {
+      margin: 0 auto;
+  }
+
+  name {
+      width:100%;
+      padding:0;
+  }
+  }
