@@ -3,7 +3,7 @@ name = document.getElementById('name');
 var counter = 800;
 burgername = [];
 var x = 500;
-var y = 500;
+var y = 250;
 ingredients = ['top bun', 'beef', 'tomatoes', 'lettuce', 'pickles', 'cheese', 'bun'];
 
 
@@ -26,7 +26,7 @@ function place() {
     foto.style.zIndex = counter;
     foto.src = 'img/' + randomfoto + '.png';
     foto.style.top = (randY + "px");
-    foto.style.left = (randX + "px");
+    // foto.style.left = (randX + "px");
 
     document.getElementById('plate').appendChild(foto);
 
