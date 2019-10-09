@@ -4,7 +4,7 @@ var counter = 800;
 burgername = [];
 var x = 500;
 var y = 250;
-ingredients = ['top bun', 'beef', 'tomatoes', 'lettuce', 'pickles', 'cheese', 'bun', 'onions', 'chicken', 'chili sauce','bacon'];
+ingredients = ['top bun', 'beef', 'tomatoes', 'lettuce', 'pickles', 'cheese', 'bun', 'onions', 'chicken', 'chili sauce', 'bacon'];
 
 
 
