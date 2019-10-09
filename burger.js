@@ -13,7 +13,7 @@ console.log(randX, randY);
 
 var foto = document.createElement("IMG");    
 var counter = 0;
-randomfoto = Math.floor(Math.random()*3);
+randomfoto = Math.floor(Math.random()*7);
 counter++;
 foto.style.zIndex = counter;
 foto.src = 'img/' + randomfoto + '.png';      
