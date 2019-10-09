@@ -1,17 +1,8 @@
-#test {
-    width:400px;
-    height:200px;
-    background-image:url('img/top.png');
-    background-size:contain;
-    background-repeat: no-repeat;
-    position:absolute;
+img {
+    position: absolute;
 }
 
-main {
-    width: 100%;
+html, body {
+    margin: 0;
     height: 100%;
-}
-
-body {
-    height: 1000px;
 }
