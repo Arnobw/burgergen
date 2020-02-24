@@ -9,6 +9,7 @@ ingredients = ['top bun', 'beef', 'tomatoes', 'lettuce', 'pickles', 'cheese', 'b
 
 
 function place() {
+    counter--;
     randX = Math.ceil(Math.random() * x);
     randY = Math.ceil(Math.random() * y);
 
@@ -20,7 +21,7 @@ function place() {
 
     burgername.push(randomfoto);
     console.log(burgername);
-    counter--;
+
     console.log(counter);
 
     foto.style.zIndex = counter;
@@ -28,7 +29,7 @@ function place() {
     foto.style.top = (randY + "px");
     // foto.style.left = (randX + "px");
 
-    document.getElementById('plate').appendChild(foto);
+    document.getElementById('plate').prependChild(foto);
 
     fullName = burgername.join("-");
     document.getElementById('name').innerHTML = fullName + " Burger";
