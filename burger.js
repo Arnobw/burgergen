@@ -29,7 +29,7 @@ function place() {
     foto.style.top = (randY + "px");
     // foto.style.left = (randX + "px");
 
-    document.getElementById('plate').prependChild(foto);
+    document.getElementById('plate').prepend(foto);
 
     fullName = burgername.join("-");
     document.getElementById('name').innerHTML = fullName + " Burger";
