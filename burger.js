@@ -59,3 +59,4 @@ function make_burger() {
     shuffled = [];
     fullName = "";
 }
+
