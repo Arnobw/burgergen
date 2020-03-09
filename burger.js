@@ -2,6 +2,8 @@ plate = document.getElementById('plate');
 name = document.getElementById('name');
 var counter = 800;
 burgername = [];
+shuffled = [];
+fullName = [];
 var x = 500;
 var y = 250;
 ingredients = ['top bun', 'beef', 'tomatoes', 'lettuce', 'pickles', 'cheese', 'bun', 'onions', 'chicken', 'chili sauce', 'bacon'];
@@ -15,7 +17,7 @@ ingredients = ['top bun', 'beef', 'tomatoes', 'lettuce', 'pickles', 'cheese', 'b
 
 document.addEventListener('click', function () {
     plate.innerHTML = "";
-    burgername = [];
+
     name.innerHTML = "";
     make_burger();
 });
@@ -53,5 +55,7 @@ function make_burger() {
         
     });
 
-  
+    burgername = [];
+    shuffled = [];
+    fullName = "";
 }
