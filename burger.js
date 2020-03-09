@@ -17,11 +17,11 @@ document.addEventListener('click', function () {
     plate.innerHTML = "";
     burgername = [];
     name.innerHTML = "";
-    futsal();
+    make_burger();
 });
 
 
-function futsal() {
+function make_burger() {
   var shuffled =  ingredients.sort(function() { return 0.5 - Math.random() });
     shuffled.unshift('top bun');
   shuffled.push('bun');
@@ -52,4 +52,6 @@ function futsal() {
 
         
     });
+
+  
 }
