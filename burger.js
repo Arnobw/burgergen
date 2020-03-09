@@ -8,34 +8,6 @@ ingredients = ['top bun', 'beef', 'tomatoes', 'lettuce', 'pickles', 'cheese', 'b
 
 
 
-// function place() {
-//     counter--;
-//     randX = Math.ceil(Math.random() * x);
-//     randY = Math.ceil(Math.random() * y);
-
-//     console.log(randX, randY);
-
-//     var foto = document.createElement("IMG");
-
-//     randomfoto = ingredients[Math.floor(Math.random() * ingredients.length)];
-
-//     burgername.push(randomfoto);
-//     console.log(burgername);
-
-//     console.log(counter);
-
-//     foto.style.zIndex = counter;
-//     foto.src = 'img/' + randomfoto + '.png';
-//     foto.style.top = (randY + "px");
-    
-//     document.getElementById('plate').prepend(foto);
-
-
-//     fullName = burgername.join("-");
-//     document.getElementById('name').innerHTML = fullName + " Burger";
-// }
-
-
 
 
 
@@ -50,10 +22,10 @@ document.addEventListener('click', function () {
 
 
 function futsal() {
-    ingredients.sort(function() { return 0.5 - Math.random() });
-    ingredients.unshift('top bun');
-    ingredients.push('bun');
-    ingredients.forEach(ingredient => {
+  var shuffled =  ingredients.sort(function() { return 0.5 - Math.random() });
+    shuffled.unshift('top bun');
+  shuffled.push('bun');
+   shuffled.forEach(ingredient => {
         counter--;
         randX = Math.ceil(Math.random() * x);
         randY = Math.ceil(Math.random() * y);
@@ -76,5 +48,8 @@ function futsal() {
     
         fullName = burgername.join("-");
         document.getElementById('name').innerHTML = fullName + " Burger";
+     
+
+        
     });
 }
