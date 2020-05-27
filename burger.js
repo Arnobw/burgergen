@@ -17,7 +17,8 @@ ingredients = ['top bun', 'beef', 'tomatoes', 'lettuce', 'pickles', 'cheese', 'b
 
 document.addEventListener('click', function () {
     plate.innerHTML = "";
-
+    fullName = [];
+    document.getElementById('name').innerHTML = fullName;
     name.innerHTML = "";
     make_burger();
 });
@@ -25,8 +26,8 @@ document.addEventListener('click', function () {
 
 function make_burger() {
   var shuffled =  ingredients.sort(function() { return 0.5 - Math.random() });
-    shuffled.unshift('top bun');
-  shuffled.push('bun');
+  //   shuffled.unshift('top bun');
+  // shuffled.push('bun');
    shuffled.forEach(ingredient => {
         counter--;
         randX = Math.ceil(Math.random() * x);
@@ -49,14 +50,16 @@ function make_burger() {
     
     
         fullName = burgername.join("-");
-        document.getElementById('name').innerHTML = fullName + " Burger";
-     
+        document.getElementById('name').innerHTML = fullName + "-Burger";
+      
+    
 
         
     });
 
+
+    fullName = [];
     burgername = [];
-    shuffled = [];
-    fullName = "";
+  
 }
 
